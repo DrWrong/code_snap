@@ -1,0 +1,8 @@
+---
+base_dir: '/Users/DrWrong/mywork/code_snaps'
+template_path: 'template'
+project_config: 'etc/project.yml'
+log:
+    file: STDOUT
+    level: :info
+
