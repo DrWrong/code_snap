@@ -46,12 +46,15 @@ Mercenary.program(:code_snaps) do |p|
       options[:project_options] = {}
       unless keyvalues.nil?
         keyvalues.each do |keyvalue|
-          if keyvalues =~ /\w+=\w+/
-            key, value = keyvalues.split("=")
-            options["project_options"][key] = value
+          # puts keyvalue
+          if keyvalue =~ /\w+=\w+/
+            # puts 'here'
+            key, value = keyvalue.split("=")
+            options[:project_options][key] = value
           end
         end
       end
+      # puts options
       handle = ProjectCommand.new(options)
       handle.handle
     end

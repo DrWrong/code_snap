@@ -26,7 +26,7 @@ class IndexCommand < BaseCommand
           @project_config["projects"] << project_config["name"]
           @project_config[name] = {
             "path" => File.join(@template_path, project_directory),
-            "necessary_args" => if project_config.has_key?("necessary_args") then project_config["necessary_args"]  else nil end,
+            "necessary_args" => if project_config.has_key?("necessary_args") then project_config["necessary_args"]  else [] end,
           }
         rescue
         end
