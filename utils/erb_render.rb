@@ -1,5 +1,6 @@
 require "ostruct"
 require "erb"
+require 'active_support/all'
 
 class  ErbRender
 
