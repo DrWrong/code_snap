@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 require "mercenary"
 # require "yaml"
-require_relative "commands/index"
 
+require_relative "commands/index"
+require_relative 'commands/project'
 # $GLOBAL_CONFIG = {}
 # log =
 Mercenary.program(:code_snaps) do |p|
@@ -51,6 +52,7 @@ Mercenary.program(:code_snaps) do |p|
           end
         end
       end
+      handle = ProjectCommand.new(options)
       handle.handle
     end
   end

@@ -1,2 +1,4 @@
 ---
 name: thrift_go_server
+necessary_args:
+- SERVER_PORT
