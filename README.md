@@ -15,5 +15,21 @@ generate the code
 
 ## Usage
 
-+ to build index: `./start_code index`
++ Firstly you should make your own project template and put it in the template directory.
+Each project_template contains a yaml formatted config file called `.config.yml`.  The config file contains the project's name
+in `name` filed and a series necessary args.
+the file like that
+
+        ```yaml
+        ---
+        name: thrift_go_server
+        necessary_args:
+        - SERVER_PORT
+
+        ```
+
+see the directory `template` for more information
+
+
++ then you build the index: `./start_code index`
 + to generate a project `./start_code project -n PROJECT_NAME -t PROJECT_TYPE`
