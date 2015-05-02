@@ -30,6 +30,7 @@ the file like that
 
 see the directory `template` for more information
 
+the file content in the template should be write in `erb` format.
 
 + then you build the index: `./start_code index`
 + to generate a project `./start_code project -n PROJECT_NAME -t PROJECT_TYPE`
